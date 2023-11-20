@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Twitter Header Creator</title>
+</head>
+<body>
+    <div id="root">
+        <div class="inputs">
+<input type="text" id="i-text" placeholder="Main text" onchange="updateText()">
+<input type="text" id="i-sub-text" placeholder="Sub text" onchange="updateText()">
+<label  for="colorPicker">Select Color:</label>
+<input id="colorPicker" type="color"  onchange="changeDivColor()">
+<label  for="fontColor">Main text color:</label>
+<input id="fontColor" type="color"  >
+<label  for="subFontColor">Sub text color:</label>
+<input id="subFontColor" type="color" onchange="textColor()" >
+<button id="changes" onclick="changeBackground()">Apply changes</button>
+<button id="export" >Export</button>
+        </div>
+    <div id="header">
+        <h2 id="text"></h2>
+        <p id="sub-text"></p>
+    </div>
+    </div>
+    <div class="footer" style="text-align: center;">
+        Built by <a href="https://twitter.com/CodesFlex">Fuzail Mansuri</a>
+    </div>   
+    <script src="app.js"></script>
+</body>
+</html>
